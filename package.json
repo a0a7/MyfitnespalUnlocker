@@ -1,0 +1,28 @@
+{
+  "name": "myfitnesspal-unlocker",
+  "version": "1.0.0",
+  "description": "Browser extension to unlock premium features on MyFitnessPal by removing premium links and blur filters",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "build:chrome": "node build.js --chrome",
+    "build:firefox": "node build.js --firefox",
+    "clean": "node build.js --clean"
+  },
+  "keywords": [
+    "browser-extension",
+    "myfitnesspal",
+    "chrome-extension",
+    "firefox-extension",
+    "premium-unlocker"
+  ],
+  "author": "MyfitnespalUnlocker",
+  "license": "MIT",
+  "devDependencies": {
+    "fs-extra": "^11.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/MyfitnespalUnlocker.git"
+  }
+}

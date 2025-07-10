@@ -1,0 +1,34 @@
+/* MyfitnespalUnlocker CSS - Disable blur filters globally */
+
+/* Force disable any blur filters that might be applied */
+* {
+    filter: none !important;
+}
+
+/* More specific targeting for common blur patterns */
+*[style*="blur"] {
+    filter: none !important;
+}
+
+/* Target elements that might have blur applied via CSS classes */
+.blur,
+.blurred,
+.premium-blur,
+.subscription-blur {
+    filter: none !important;
+}
+
+/* Hide any premium upgrade prompts or overlays */
+[class*="premium"],
+[class*="upgrade"],
+[id*="premium"],
+[id*="upgrade"] {
+    display: none !important;
+}
+
+/* Remove any premium-related banners or notifications */
+.premium-banner,
+.upgrade-banner,
+.subscription-prompt {
+    display: none !important;
+}
